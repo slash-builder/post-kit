@@ -1,0 +1,13 @@
+{
+  "id": "2026-11-01-list-calibration",
+  "status": "OK",
+  "publishable": true,
+  "files": [
+    "_data/post-kit-state.json",
+    "_posts/2026-11-01-a-short-note.md"
+  ],
+  "title": "A Short Note",
+  "topic": "list/calibration",
+  "cost_usd": 0.02,
+  "calls": 2
+}

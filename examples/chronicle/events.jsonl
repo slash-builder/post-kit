@@ -1,0 +1,22 @@
+{"ts": "2026-11-01T10:00:02Z", "agent": "Ada", "type": "spawn", "detail": "x=12 z=-40"}
+{"ts": "2026-11-01T10:00:41Z", "agent": "Bram", "type": "spawn"}
+{"ts": "2026-11-01T10:01:30Z", "agent": "Ada", "type": "mine", "item": "oak_log", "count": 4}
+{"ts": "2026-11-01T10:01:58Z", "agent": "Bram", "type": "mine", "item": "oak_log", "count": 6}
+{"ts": "2026-11-01T10:03:12Z", "agent": "Ada", "type": "craft", "item": "crafting_table", "count": 1}
+{"ts": "2026-11-01T10:04:40Z", "agent": "Cleo", "type": "spawn"}
+{"ts": "2026-11-01T10:05:05Z", "agent": "Cleo", "type": "dm", "text": "to=Ada: where is the table?"}
+{"ts": "2026-11-01T10:05:44Z", "agent": "Ada", "type": "dm", "text": "to=Cleo: by the lake, east of the three oaks"}
+{"ts": "2026-11-01T10:09:20Z", "agent": "Bram", "type": "death", "detail": "cause=zombie night=1"}
+{"ts": "2026-11-01T10:09:31Z", "agent": "Bram", "type": "respawn"}
+{"ts": "2026-11-01T10:12:00Z", "agent": "Cleo", "type": "note", "text": "Examplecorp supplied the build plan for the shelter"}
+{"ts": "2026-11-01T10:15:10Z", "agent": "Ada", "type": "build", "item": "shelter_3x3"}
+{"ts": "2026-11-01T10:21:45Z", "agent": "Cleo", "type": "dm", "text": "to=Bram: shelter is done, come in before dark"}
+{"ts": "2026-11-01T10:22:02Z", "agent": "Bram", "type": "move", "detail": "to=shelter"}
+{"ts": "2026-11-02T09:00:10Z", "agent": "Ada", "type": "mine", "item": "cobblestone", "count": 18}
+{"ts": "2026-11-02T09:03:55Z", "agent": "Ada", "type": "craft", "item": "stone_pickaxe", "count": 1}
+{"ts": "2026-11-02T09:07:30Z", "agent": "Bram", "type": "fish"}
+{"ts": "2026-11-02T09:07:58Z", "agent": "Bram", "type": "fish", "detail": "caught=cod"}
+{"ts": "2026-11-02T09:11:20Z", "agent": "Cleo", "type": "eat", "item": "cod"}
+{"ts": "2026-11-02T09:15:00Z", "agent": "Cleo", "type": "dm", "text": "to=Ada: rationing: two fish per day each"}
+{"ts": "2026-11-02T09:15:40Z", "agent": "Ada", "type": "dm", "text": "to=Cleo: agreed, writing it in the ledger"}
+{"ts": "2026-11-02T09:20:00Z", "agent": "Ada", "type": "note", "text": "ledger started in the shared folder"}

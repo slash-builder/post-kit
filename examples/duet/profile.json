@@ -1,0 +1,29 @@
+{
+  "name": "duet",
+  "format": "conversation",
+  "root": "site",
+  "guard": {"blocklist": "blocklist.sha256"},
+  "brief": "brief.md",
+  "personas": {
+    "host": {"file": "personas/host.md", "label": "the Host", "model": "sonnet"},
+    "critic": {"file": "personas/critic.md", "label": "the Critic", "model": "sonnet"}
+  },
+  "turns": [
+    {"voice": "host", "kind": "open"},
+    {"voice": "critic", "kind": "margin", "ask": "Be blunt."},
+    {"voice": "host", "kind": "close"},
+    {"voice": "critic", "kind": "last"}
+  ],
+  "topics": {"collections": {"wiki": "_wiki"}, "permalinks": {"wiki": "/wiki/{name}/"}, "drift": {"continue_probability": 0.0}},
+  "checks": {"reference_regex": "§\\s?([IVXLC]+)|\\bnotes?\\s+(\\d+)"},
+  "render": {
+    "layout": "wiki",
+    "attribution": "the Host, with the Critic",
+    "reply_class": "reply",
+    "footnotes": {"config_file": "_config.yml", "key": "current_note"},
+    "signature_html": "<p>&mdash; the Host, {year}</p>"
+  },
+  "disclosure": {"front_matter": {"ai_generated": true, "reviewed": false}},
+  "output": {"directory": "_wiki", "file_prefix": "exchange", "state_file": "_data/post-kit-state.json"},
+  "publish": {"mode": "stage", "on_attention": "hold", "max_per_day": 1, "pause_file": "PAUSE", "trailer": "Assisted-by: LLM"}
+}

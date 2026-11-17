@@ -1,0 +1,14 @@
+{
+  "id": "2026-11-01-wiki-alpha",
+  "status": "OK",
+  "publishable": true,
+  "files": [
+    "_config.yml",
+    "_data/post-kit-state.json",
+    "_wiki/exchange-2026-11-01-wiki-alpha.md"
+  ],
+  "title": "On a Quiet Margin",
+  "topic": "wiki/alpha",
+  "cost_usd": 0.05,
+  "calls": 5
+}

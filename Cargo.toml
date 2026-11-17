@@ -1,0 +1,48 @@
+[package]
+name = "slashbuilder-post-kit"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.80"
+description = "Personas that write blog posts: a tool-less, schema-checked model call, deterministic checks, a hashed term guard, rendering, and gated publishing."
+license = "Apache-2.0"
+repository = "https://github.com/slash-builder/post-kit"
+readme = "README.md"
+keywords = ["blog", "agents", "automation", "publishing"]
+categories = ["development-tools"]
+# An allow-list, not an exclude: CI scripts, internal docs or hidden files can never ship by accident.
+# `examples/` is shipped because a doc-test and the README use the example profiles; `spec/` is the contract the README links.
+include = ["/src/", "/README.md", "/LICENSE", "/CHANGELOG.md", "/spec/", "/examples/"]
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[lib]
+name = "post_kit"
+path = "src/lib.rs"
+
+[[bin]]
+name = "post"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+regex = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["preserve_order"] }
+sha2 = "0.10"
+tempfile = "3"
+thiserror = "2"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", default-features = false, features = ["fmt", "env-filter"] }
+unicode-normalization = "0.1"
+
+[lints.rust]
+unsafe_code = "forbid"
+missing_docs = "deny"
+
+[lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"
+panic = "deny"
+print_stdout = "warn"

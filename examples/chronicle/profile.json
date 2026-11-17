@@ -1,0 +1,25 @@
+{
+  "name": "chronicle",
+  "format": "post",
+  "root": "site",
+  "guard": {"blocklist": "blocklist.sha256"},
+  "brief": "brief.md",
+  "personas": {
+    "annalist": {"file": "personas/annalist.md", "label": "the Annalist", "model": "sonnet"}
+  },
+  "review": {"model": "haiku", "notes": "The entries describe a game world run by software agents; the names are of software, not people."},
+  "turns": [{"voice": "annalist", "kind": "post"}],
+  "topics": {
+    "log": {"file": "events.jsonl", "group_by": "day", "title": "Records for {group}"},
+    "drift": {"continue_probability": 0.0}
+  },
+  "limits": {"max_cost_usd": 1.0, "max_paragraphs": 3, "paragraph_words": 120},
+  "render": {
+    "layout": "post",
+    "author": "the Annalist",
+    "byline_markdown": "*Written by an AI persona from a game world's records, published without human review.*"
+  },
+  "disclosure": {"front_matter": {"ai_generated": true, "reviewed": false}},
+  "output": {"directory": "_posts", "state_file": "_data/post-kit-state.json"},
+  "publish": {"mode": "stage", "on_attention": "hold", "max_per_day": 1, "pause_file": "PAUSE", "trailer": "Assisted-by: LLM"}
+}
