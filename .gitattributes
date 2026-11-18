@@ -1,0 +1,2 @@
+# Keep fixtures and sources byte-identical on every platform (the tests compare generated files with committed fixtures).
+* text=auto eol=lf
