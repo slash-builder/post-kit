@@ -46,6 +46,8 @@ Every pull request runs formatting, clippy, docs, tests on Linux (x86-64 and arm
 `cargo-deny` (advisories, licences, sources), a semver check against the latest published version, a hygiene check, and a DCO check.
 All of it runs on GitHub Actions: see [`.github/workflows/`](.github/workflows/).
 
+Releases are automated with [release-plz](https://release-plz.dev): pushes to `main` open or update a release pull request that bumps the version and changelog from Conventional Commit titles (`feat:`, `fix:`, a `!` for a breaking change) and checks the bump with `cargo-semver-checks`. Merging that pull request releases the crate: a tag `vX.Y.Z` equal to the crate version, published to crates.io by trusted publishing from a protected environment.
+
 ## Pull request process
 
 1. Fork the repository and create a branch from `main`.
