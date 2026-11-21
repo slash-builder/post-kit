@@ -3,6 +3,13 @@
 All notable changes to this crate are documented here. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 and the crate follows [Semantic Versioning](https://semver.org/) (pre-1.0: a breaking change bumps the minor version).
 
+## [0.1.1](https://github.com/slash-builder/post-kit/compare/v0.1.0...v0.1.1) - 2026-11-21
+
+### Other
+
+- *(deps)* Bump clap from 4.5.61 to 4.6.8 ([#1](https://github.com/slash-builder/post-kit/pull/1))
+- raise the minimum supported Rust version to 1.85 ([#8](https://github.com/slash-builder/post-kit/pull/8))
+
 ## [0.1.0] - unreleased
 
 ### Added

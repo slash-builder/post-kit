@@ -1,6 +1,6 @@
 [package]
 name = "slashbuilder-post-kit"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 rust-version = "1.85"
 description = "Personas that write blog posts: a tool-less, schema-checked model call, deterministic checks, a hashed term guard, rendering, and gated publishing."
