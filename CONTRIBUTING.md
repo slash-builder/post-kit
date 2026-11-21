@@ -28,7 +28,7 @@ Small changes (typos, doc fixes, small bug fixes) can go straight to a pull requ
 
 ## Local development
 
-Requires Rust 1.80 or newer. The tests run `git` against local temporary repositories; no network, model or account is needed (the model is faked).
+Requires Rust 1.85 or newer. The tests run `git` against local temporary repositories; no network, model or account is needed (the model is faked).
 
 ```sh
 cargo build

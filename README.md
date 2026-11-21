@@ -4,7 +4,7 @@ Personas that write **blog posts**, with the checks and the publishing rules to 
 
 A persona is a prompt file. Post Kit gives it a topic, asks the model for a schema-checked answer with **no tools**, checks the answer in code, renders the post, and publishes it under rules you set. A person can be in the loop or not; that is a setting, and the Kit says plainly when nobody reviewed a post.
 
-> **Status: alpha (0.1).** The profile format and the library API may change before 1.0. Minimum supported Rust version: 1.80.
+> **Status: alpha (0.1).** The profile format and the library API may change before 1.0. Minimum supported Rust version: 1.85.
 
 ## What it owns
 
